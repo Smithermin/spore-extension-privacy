@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隐私权政策 - Spore: Knowledge Absorber</title>
+    <title>隐私权政策 / Privacy Policy - Spore: Knowledge Absorber</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -14,7 +14,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 860px;
             margin: 0 auto;
             background: #fff;
             padding: 40px 48px;
@@ -23,8 +23,13 @@
         }
         h1 {
             font-size: 26px;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             color: #1a1a1a;
+        }
+        .subtitle {
+            color: #888;
+            font-size: 16px;
+            margin-bottom: 24px;
         }
         .updated {
             color: #888;
@@ -33,13 +38,49 @@
         }
         h2 {
             font-size: 18px;
-            margin-top: 28px;
-            margin-bottom: 10px;
+            margin-top: 32px;
+            margin-bottom: 6px;
             color: #1a1a1a;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #eee;
         }
-        p { margin-bottom: 12px; }
-        ul { margin-bottom: 12px; padding-left: 20px; }
-        li { margin-bottom: 6px; }
+        .en-title {
+            font-size: 14px;
+            color: #999;
+            font-weight: normal;
+            margin-left: 8px;
+        }
+        .section-zh { margin-top: 16px; }
+        .section-en {
+            margin-top: 12px;
+            padding: 12px 16px;
+            background: #fafafa;
+            border-radius: 8px;
+        }
+        .section-en p,
+        .section-en li {
+            font-size: 14px;
+            color: #555;
+        }
+        .lang-label {
+            display: inline-block;
+            font-size: 11px;
+            padding: 1px 8px;
+            border-radius: 10px;
+            margin-right: 6px;
+            font-weight: 600;
+        }
+        .lang-zh {
+            background: #e8f0fe;
+            color: #1a73e8;
+        }
+        .lang-en {
+            background: #e6f4ea;
+            color: #1e8e3e;
+        }
+        p { margin-bottom: 10px; }
+        ul { margin-bottom: 10px; padding-left: 20px; }
+        li { margin-bottom: 4px; }
         strong { color: #1a1a1a; }
         code {
             background: #f0f0f0;
@@ -63,85 +104,176 @@
             margin-bottom: 16px;
             border-radius: 4px;
         }
+        .highlight-box strong { color: #1a73e8; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>隐私权政策</h1>
-        <p class="updated">最后更新：2026 年 5 月 23 日</p>
+        <h1>隐私权政策 / Privacy Policy</h1>
+        <p class="subtitle">Spore - Knowledge Absorber &amp; Memory Engine</p>
+        <p class="updated">最后更新 / Last Updated：2026 年 5 月 23 日</p>
 
         <div class="highlight-box">
-            <strong>核心原则：本地优先，用户掌控。</strong>
-            Spore 的所有核心数据均存储在您的浏览器本地，我们没有任何服务器来收集或存储您的个人信息。您配置的 API Key 仅存于本地，仅用于向您指定的 AI 服务商发送请求。
+            <strong>核心原则：本地优先，用户掌控。</strong><br>
+            Spore 的所有核心数据均存储在您的浏览器本地，我们没有任何服务器来收集或存储您的个人信息。您配置的 API Key 仅存于本地，仅用于向您指定的 AI 服务商发送请求。<br><br>
+            <strong>Core Principle: Local-First, User-Controlled.</strong><br>
+            All of Spore's core data is stored locally in your browser. We operate no servers that collect or store your personal information. Your API keys are stored locally and used solely to send requests to the AI provider you configure.
         </div>
 
-        <h2>1. 数据收集与存储</h2>
-        <p>Spore（以下简称"本扩展"）采用本地优先（Local-First）架构：</p>
-        <ul>
-            <li><strong>文章与笔记数据</strong>：您从网页捕获的文章、AI 生成的摘要、闪卡（记忆卡片）、笔记等所有知识数据，均存储在浏览器本地的 IndexedDB 中。</li>
-            <li><strong>API Key 配置</strong>：您自行配置的 AI 服务商 API Key（如 OpenRouter、DeepSeek、SiliconFlow 等），仅存储在浏览器 <code>chrome.storage.local</code> 中。</li>
-            <li><strong>使用偏好</strong>：您的分类体系、复习进度、主题偏好等设置数据，均存储在浏览器本地。</li>
-        </ul>
-        <p><strong>本扩展没有任何云端服务器。</strong>我们不会收集、存储或转发您的任何数据。</p>
+        <!-- 1. 数据收集与存储 -->
+        <h2>1. 数据收集与存储 <span class="en-title">Data Collection &amp; Storage</span></h2>
 
-        <h2>2. 数据传输</h2>
-        <p>本扩展唯一对外发起网络请求的场景是：</p>
-        <ul>
-            <li><strong>AI 内容处理</strong>：当您使用 AI 总结、闪卡生成、创意工坊等功能时，文章内容会被发送到您在设置页面中<strong>自行配置并授权</strong>的 AI 服务商 API（如 OpenRouter、DeepSeek、SiliconFlow 等）。</li>
-        </ul>
-        <p>除此之外，本扩展<strong>不会</strong>向任何第三方服务器传输数据。所有 API 通信均通过 HTTPS 加密进行。</p>
-        <p>我们<strong>不包含</strong>任何分析 SDK、广告 SDK 或第三方追踪代码。</p>
+        <div class="section-zh">
+            <p><span class="lang-label lang-zh">中</span>Spore（以下简称"本扩展"）采用本地优先（Local-First）架构：</p>
+            <ul>
+                <li><strong>文章与笔记数据</strong>：您从网页捕获的文章、AI 生成的摘要、闪卡（记忆卡片）、笔记等所有知识数据，均存储在浏览器本地的 IndexedDB 中。</li>
+                <li><strong>API Key 配置</strong>：您自行配置的 AI 服务商 API Key（如 OpenRouter、DeepSeek、SiliconFlow 等），仅存储在浏览器 <code>chrome.storage.local</code> 中。</li>
+                <li><strong>使用偏好</strong>：您的分类体系、复习进度、主题偏好等设置数据，均存储在浏览器本地。</li>
+            </ul>
+            <p><strong>本扩展没有任何云端服务器。</strong>我们不会收集、存储或转发您的任何数据。</p>
+        </div>
 
-        <h2>3. 信息使用</h2>
-        <p>本扩展在本地处理您的数据，仅用于以下目的：</p>
-        <ul>
-            <li>在侧边栏中展示和管理您的知识库</li>
-            <li>调用您配置的 AI API 生成摘要、闪卡和多格式内容</li>
-            <li>通过本地 SRS（间隔重复）算法安排复习提醒</li>
-            <li>生成本地数据洞察看板（阅读统计、领域分布等）</li>
-        </ul>
+        <div class="section-en">
+            <p><span class="lang-label lang-en">EN</span>Spore adopts a Local-First architecture:</p>
+            <ul>
+                <li><strong>Articles &amp; Notes</strong>: All knowledge data—captured articles, AI-generated summaries, flashcards, notes, etc.—is stored in your browser's local IndexedDB.</li>
+                <li><strong>API Key Config</strong>: API keys you configure for AI providers (e.g., OpenRouter, DeepSeek, SiliconFlow) are stored only in <code>chrome.storage.local</code>.</li>
+                <li><strong>Preferences</strong>: Your taxonomy, review progress, theme preferences, and other settings are stored locally in your browser.</li>
+            </ul>
+            <p><strong>This extension operates no cloud servers.</strong> We do not collect, store, or relay any of your data.</p>
+        </div>
 
-        <h2>4. 信息共享</h2>
-        <p>
-            本扩展<strong>不会</strong>向任何第三方出售、出租或分享您的个人信息。
-        </p>
-        <p>
-            您配置的 AI 服务商在处理 API 请求时，将按照其自身的隐私政策处理数据。建议您在使用前查阅所选 AI 服务商的隐私政策。
-        </p>
+        <!-- 2. 数据传输 -->
+        <h2>2. 数据传输 <span class="en-title">Data Transmission</span></h2>
 
-        <h2>5. 权限说明</h2>
-        <p>本扩展申请了以下权限及其用途：</p>
-        <ul>
-            <li><strong>storage</strong>：在浏览器本地存储文章、闪卡、设置等所有数据</li>
-            <li><strong>sidePanel</strong>：在侧边栏中展示知识库面板</li>
-            <li><strong>tabs / activeTab</strong>：获取当前标签页信息以便捕获文章内容</li>
-            <li><strong>contextMenus</strong>：提供右键菜单快速保存网页文章</li>
-            <li><strong>alarms</strong>：定时触发 SRS 复习提醒</li>
-            <li><strong>notifications</strong>：发送复习提醒通知</li>
-            <li><strong>host_permissions (&lt;all_urls&gt;)</strong>：在用户主动点击扩展图标时，从任意网页提取正文内容</li>
-        </ul>
+        <div class="section-zh">
+            <p><span class="lang-label lang-zh">中</span>本扩展唯一对外发起网络请求的场景是：</p>
+            <ul>
+                <li><strong>AI 内容处理</strong>：当您使用 AI 总结、闪卡生成、创意工坊等功能时，文章内容会被发送到您在设置页面中<strong>自行配置并授权</strong>的 AI 服务商 API（如 OpenRouter、DeepSeek、SiliconFlow 等）。</li>
+            </ul>
+            <p>除此之外，本扩展<strong>不会</strong>向任何第三方服务器传输数据。所有 API 通信均通过 HTTPS 加密进行。我们<strong>不包含</strong>任何分析 SDK、广告 SDK 或第三方追踪代码。</p>
+        </div>
 
-        <h2>6. 数据删除</h2>
-        <p>您可以随时通过以下方式删除所有数据：</p>
-        <ul>
-            <li>在扩展侧边栏或仪表盘中手动删除文章或闪卡</li>
-            <li>在浏览器扩展管理页面中清除 Spore 的本地存储数据</li>
-            <li>卸载本扩展将自动清除所有存储的本地数据</li>
-        </ul>
+        <div class="section-en">
+            <p><span class="lang-label lang-en">EN</span>The only outbound network requests made by this extension are:</p>
+            <ul>
+                <li><strong>AI Content Processing</strong>: When you use features like AI summarization, flashcard generation, or Forge Studio, article content is sent to the AI provider API you have <strong>configured and authorized</strong> (e.g., OpenRouter, DeepSeek, SiliconFlow).</li>
+            </ul>
+            <p>Beyond this, the extension <strong>does not</strong> transmit data to any third-party servers. All API communications are encrypted via HTTPS. We <strong>do not include</strong> any analytics SDK, advertising SDK, or third-party tracking code.</p>
+        </div>
 
-        <h2>7. 隐私权政策的变更</h2>
-        <p>
-            本隐私权政策可能会不时更新。如有重大变更，我们会在扩展的更新说明中通知您。
-        </p>
+        <!-- 3. 信息使用 -->
+        <h2>3. 信息使用 <span class="en-title">Data Usage</span></h2>
 
-        <h2>8. 联系方式</h2>
-        <p>
-            如果您对本隐私权政策有任何疑问，请通过以下方式联系我们：<br>
-            <a href="https://github.com/Smithermin/spore-extension-privacy/issues">GitHub Issues</a>
-        </p>
+        <div class="section-zh">
+            <p><span class="lang-label lang-zh">中</span>本扩展在本地处理您的数据，仅用于以下目的：</p>
+            <ul>
+                <li>在侧边栏中展示和管理您的知识库</li>
+                <li>调用您配置的 AI API 生成摘要、闪卡和多格式内容</li>
+                <li>通过本地 SRS（间隔重复）算法安排复习提醒</li>
+                <li>生成本地数据洞察看板（阅读统计、领域分布等）</li>
+            </ul>
+        </div>
+
+        <div class="section-en">
+            <p><span class="lang-label lang-en">EN</span>All data is processed locally and used solely for:</p>
+            <ul>
+                <li>Displaying and managing your knowledge base in the side panel</li>
+                <li>Calling your configured AI API to generate summaries, flashcards, and multi-format content</li>
+                <li>Scheduling review reminders via the local SRS (Spaced Repetition System) algorithm</li>
+                <li>Generating local data insight dashboards (reading stats, domain distribution, etc.)</li>
+            </ul>
+        </div>
+
+        <!-- 4. 信息共享 -->
+        <h2>4. 信息共享 <span class="en-title">Information Sharing</span></h2>
+
+        <div class="section-zh">
+            <p><span class="lang-label lang-zh">中</span>本扩展<strong>不会</strong>向任何第三方出售、出租或分享您的个人信息。</p>
+            <p>您配置的 AI 服务商在处理 API 请求时，将按照其自身的隐私政策处理数据。建议您在使用前查阅所选 AI 服务商的隐私政策。</p>
+        </div>
+
+        <div class="section-en">
+            <p><span class="lang-label lang-en">EN</span>This extension <strong>does not</strong> sell, rent, or share your personal information with any third party.</p>
+            <p>The AI provider you configure will process data according to its own privacy policy when handling API requests. We recommend reviewing the privacy policy of your chosen AI provider before use.</p>
+        </div>
+
+        <!-- 5. 权限说明 -->
+        <h2>5. 权限说明 <span class="en-title">Permissions</span></h2>
+
+        <div class="section-zh">
+            <p><span class="lang-label lang-zh">中</span>本扩展申请了以下权限及其用途：</p>
+            <ul>
+                <li><strong>storage</strong>：在浏览器本地存储文章、闪卡、设置等所有数据</li>
+                <li><strong>sidePanel</strong>：在侧边栏中展示知识库面板</li>
+                <li><strong>tabs / activeTab</strong>：获取当前标签页信息以便捕获文章内容</li>
+                <li><strong>contextMenus</strong>：提供右键菜单快速保存网页文章</li>
+                <li><strong>alarms</strong>：定时触发 SRS 复习提醒</li>
+                <li><strong>notifications</strong>：发送复习提醒通知</li>
+                <li><strong>host_permissions (&lt;all_urls&gt;)</strong>：在用户主动操作时，从当前网页提取正文内容</li>
+            </ul>
+        </div>
+
+        <div class="section-en">
+            <p><span class="lang-label lang-en">EN</span>This extension requests the following permissions and their purposes:</p>
+            <ul>
+                <li><strong>storage</strong>: Store articles, flashcards, settings, and all other data locally in your browser</li>
+                <li><strong>sidePanel</strong>: Display the knowledge base panel in the browser side panel</li>
+                <li><strong>tabs / activeTab</strong>: Access current tab information to capture article content</li>
+                <li><strong>contextMenus</strong>: Provide right-click context menu for quick article saving</li>
+                <li><strong>alarms</strong>: Schedule SRS review reminders</li>
+                <li><strong>notifications</strong>: Send review reminder notifications</li>
+                <li><strong>host_permissions (&lt;all_urls&gt;)</strong>: Extract main content from the current webpage when you actively use the extension</li>
+            </ul>
+        </div>
+
+        <!-- 6. 数据删除 -->
+        <h2>6. 数据删除 <span class="en-title">Data Deletion</span></h2>
+
+        <div class="section-zh">
+            <p><span class="lang-label lang-zh">中</span>您可以随时通过以下方式删除所有数据：</p>
+            <ul>
+                <li>在扩展侧边栏或仪表盘中手动删除文章或闪卡</li>
+                <li>在浏览器扩展管理页面中清除 Spore 的本地存储数据</li>
+                <li>卸载本扩展将自动清除所有存储的本地数据</li>
+            </ul>
+        </div>
+
+        <div class="section-en">
+            <p><span class="lang-label lang-en">EN</span>You can delete all data at any time by:</p>
+            <ul>
+                <li>Manually deleting articles or flashcards in the side panel or dashboard</li>
+                <li>Clearing Spore's local storage data in your browser's extension management page</li>
+                <li>Uninstalling this extension, which will automatically remove all stored local data</li>
+            </ul>
+        </div>
+
+        <!-- 7. 政策变更 -->
+        <h2>7. 隐私权政策的变更 <span class="en-title">Changes to This Policy</span></h2>
+
+        <div class="section-zh">
+            <p><span class="lang-label lang-zh">中</span>本隐私权政策可能会不时更新。如有重大变更，我们会在扩展的更新说明中通知您。</p>
+        </div>
+
+        <div class="section-en">
+            <p><span class="lang-label lang-en">EN</span>This privacy policy may be updated from time to time. If material changes are made, we will notify you via the extension's update notes.</p>
+        </div>
+
+        <!-- 8. 联系方式 -->
+        <h2>8. 联系方式 <span class="en-title">Contact</span></h2>
+
+        <div class="section-zh">
+            <p><span class="lang-label lang-zh">中</span>如果您对本隐私权政策有任何疑问，请通过以下方式联系我们：<br>
+            <a href="https://github.com/Smithermin/spore-extension-privacy/issues">GitHub Issues</a></p>
+        </div>
+
+        <div class="section-en">
+            <p><span class="lang-label lang-en">EN</span>If you have any questions about this privacy policy, please contact us via:<br>
+            <a href="https://github.com/Smithermin/spore-extension-privacy/issues">GitHub Issues</a></p>
+        </div>
 
         <div class="footer">
-            <p>Spore 是开源软件，源代码可在 <a href="https://github.com/Smithermin/spore">GitHub</a> 上查看。</p>
+            <p>Spore — Knowledge Absorber &amp; Memory Engine</p>
         </div>
     </div>
 </body>
