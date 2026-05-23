@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私权政策 - DeepSeek Mate</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 48px;
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        .updated {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        p { margin-bottom: 12px; }
+        ul { margin-bottom: 12px; padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        strong { color: #1a1a1a; }
+        a { color: #4F6BED; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>隐私权政策</h1>
+        <p class="updated">最后更新：2026 年 5 月 23 日</p>
+
+        <p>
+            DeepSeek Mate（以下简称"本扩展"）尊重并保护您的隐私。本隐私权政策说明本扩展如何收集、使用和保护您的信息。
+        </p>
+
+        <h2>1. 信息收集</h2>
+        <p>本扩展在您使用过程中可能会收集以下信息：</p>
+        <ul>
+            <li><strong>对话内容</strong>：当您使用收藏功能时，本扩展会保存您当前对话中的问题与回答内容。这部分数据仅存储在您的浏览器本地（<code>chrome.storage.local</code>），不会上传至任何第三方服务器。</li>
+            <li><strong>历史对话记录</strong>：当您启用历史同步功能时，本扩展会通过 DeepSeek 官方 API 获取您在 chat.deepseek.com 上的历史对话记录。这些数据同样仅存储在您的浏览器本地。</li>
+            <li><strong>提示词数据</strong>：您自定义的提示词内容将存储在浏览器本地。</li>
+        </ul>
+
+        <h2>2. 信息使用</h2>
+        <p>本扩展收集的信息仅用于以下目的：</p>
+        <ul>
+            <li>在侧边栏中展示您收藏的对话和历史记录</li>
+            <li>提供本地搜索功能，帮助您快速查找历史对话</li>
+            <li>导出对话为 Markdown 格式</li>
+            <li>创建分享链接（通过 DeepSeek 官方 API）</li>
+        </ul>
+
+        <h2>3. 信息共享</h2>
+        <p>
+            本扩展<strong>不会</strong>向任何第三方出售、出租或分享您的个人信息。本扩展<strong>不包含</strong>任何分析、广告或追踪代码。
+        </p>
+        <p>本扩展与 DeepSeek 官方 API 的通信仅用于：</p>
+        <ul>
+            <li>获取您授权访问的历史对话记录</li>
+            <li>创建对话分享链接</li>
+        </ul>
+        <p>这些通信基于您在 DeepSeek 网站上的登录状态和授权。</p>
+
+        <h2>4. 数据存储</h2>
+        <p>
+            所有数据均存储在您的浏览器本地存储（<code>chrome.storage.local</code>）中。您可以随时通过以下方式管理或删除数据：
+        </p>
+        <ul>
+            <li>在扩展侧边栏中手动删除收藏的对话</li>
+            <li>在 Chrome 扩展管理页面中清除扩展的本地存储数据</li>
+            <li>卸载本扩展将自动清除所有存储的数据</li>
+        </ul>
+
+        <h2>5. 数据传输</h2>
+        <p>
+            本扩展<strong>不会</strong>将您的数据传输至任何除 DeepSeek 官方服务器之外的第三方服务器。所有与 DeepSeek API 的通信均通过 HTTPS 加密进行。
+        </p>
+
+        <h2>6. 权限说明</h2>
+        <p>本扩展申请了以下 Chrome 权限及其用途：</p>
+        <ul>
+            <li><strong>storage</strong>：在浏览器本地存储收藏的对话、历史记录和设置</li>
+            <li><strong>sidePanel</strong>：在侧边栏中展示收藏和搜索功能</li>
+            <li><strong>scripting</strong>：在 chat.deepseek.com 页面注入收藏按钮等功能</li>
+            <li><strong>notifications</strong>：收藏成功时发送通知提醒</li>
+            <li><strong>downloads</strong>：导出对话为 Markdown 文件</li>
+            <li><strong>tabs</strong>：获取当前标签页信息以管理对话</li>
+            <li><strong>host_permissions (chat.deepseek.com)</strong>：仅在 DeepSeek 网站上运行</li>
+        </ul>
+
+        <h2>7. 儿童隐私</h2>
+        <p>本扩展不面向 13 岁以下儿童，不会故意收集儿童的个人信息。</p>
+
+        <h2>8. 隐私权政策的变更</h2>
+        <p>
+            本隐私权政策可能会不时更新。如有重大变更，我们会在扩展的更新说明中通知您。
+        </p>
+
+        <h2>9. 联系方式</h2>
+        <p>
+            如果您对本隐私权政策有任何疑问，请通过以下方式联系我们：<br>
+            <a href="https://github.com/anomalyco/ai-chat-recorder/issues">GitHub Issues</a>
+        </p>
+
+        <div class="footer">
+            <p>DeepSeek Mate 是开源软件，源代码可在 <a href="https://github.com/anomalyco/ai-chat-recorder">GitHub</a> 上查看。</p>
+        </div>
+    </div>
+</body>
+</html>
